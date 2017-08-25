@@ -1,0 +1,55 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="custom_title_height">50dp</dimen>
+    <dimen name="text_size20">10sp</dimen>
+    <dimen name="text_size22">11sp</dimen>
+    <dimen name="text_size24">12sp</dimen>
+    <dimen name="text_size26">13sp</dimen>
+    <dimen name="text_size28">14sp</dimen>
+    <dimen name="text_size29">14.5sp</dimen>
+    <dimen name="text_size30">15sp</dimen>
+    <dimen name="text_size32">16sp</dimen>
+    <dimen name="text_size34">17sp</dimen>
+    <dimen name="text_size36">18sp</dimen>
+    <dimen name="text_size38">19sp</dimen>
+    <dimen name="text_size40">20sp</dimen>
+    <dimen name="text_size42">21sp</dimen>
+    <dimen name="text_size44">22sp</dimen>
+    <dimen name="text_size46">23sp</dimen>
+    <dimen name="text_size48">24sp</dimen>
+    <dimen name="text_size50">25sp</dimen>
+    <dimen name="text_size54">27sp</dimen>
+    <dimen name="text_size60">30sp</dimen>
+    <dimen name="text_size70">35sp</dimen>
+    <dimen name="text_size80">40sp</dimen>
+    <dimen name="xian">0.5sp</dimen>
+    <dimen name="margin_left12">6sp</dimen>
+    <dimen name="margin_left16">8sp</dimen>
+    <dimen name="margin_left30">15sp</dimen>
+    <dimen name="margin_left24">12sp</dimen>
+    <dimen name="margin_right12">6sp</dimen>
+    <dimen name="margin_right16">8sp</dimen>
+    <dimen name="margin_right30">15sp</dimen>
+    <dimen name="margin_right24">12sp</dimen>
+    <dimen name="corner_width3">1.5sp</dimen>
+    <dimen name="corner_width10">5sp</dimen>
+    <dimen name="corner_width15">7.5sp</dimen>
+    <dimen name="margintop70">35sp</dimen>
+    <dimen name="height">60dp</dimen>
+    <dimen name="size60">30dp</dimen>
+    <dimen name="default_divider_height_1">1dp</dimen>
+    <dimen name="default_divider_height_2">2dp</dimen>
+    <dimen name="default_divider_height_3">3dp</dimen>
+    <dimen name="default_divider_height_4">4dp</dimen>
+    <dimen name="default_divider_height_5">5dp</dimen>
+    <dimen name="default_divider_height_6">6dp</dimen>
+    <dimen name="default_divider_height_7">7dp</dimen>
+    <dimen name="default_divider_height_8">8dp</dimen>
+    <dimen name="default_divider_height_9">9dp</dimen>
+    <dimen name="default_divider_height_10">10dp</dimen>
+    <dimen name="default_divider_padding">4dp</dimen>
+    <dimen name="padding_top">0dp</dimen>
+</resources>

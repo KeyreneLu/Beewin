@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="21.5dp"
+        android:background="@color/bg">
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/toast"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="71.5dip"
+        android:gravity="center"
+        android:text="@string/qsrssmm"
+        android:textColor="@color/three_color"
+        android:textSize="18sp"/>
+
+    <com.whale.beewin.gesture.LocusPassWordView
+        android:id="@+id/LocusPassWordView"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+    </com.whale.beewin.gesture.LocusPassWordView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_gesture_forget"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="80dp"
+            android:background="@null"
+            android:text="@string/wjmm"
+            android:textColor="@color/three_color"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</RelativeLayout>

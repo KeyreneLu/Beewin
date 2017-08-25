@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="@dimen/margin_left30"
+        android:layout_marginRight="@dimen/margin_right30">
+
+        <ImageView
+            android:id="@+id/iv_bank"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_bank"
+            android:text="农业银行"
+            android:textSize="@dimen/text_size30"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:textColor="@color/three_color"/>
+
+        <TextView
+            android:id="@+id/tv_bank_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单笔0.2万元/单日限额1万元"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/three_color"
+            android:textSize="@dimen/text_size26"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

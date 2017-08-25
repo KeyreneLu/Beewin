@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/hbsc"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/TwoMatchLayout">
+        <LinearLayout
+            android:id="@+id/ll_loading"
+           style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:indeterminateDrawable="@drawable/big_loading"/>
+
+            <TextView
+                style="@style/TwoWrapLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="拼命加载中..."
+                android:textColor="@android:color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/list"
+            android:visibility="gone"
+            style="@style/TwoMatchLayout"
+            android:divider="@color/bg"
+            android:dividerHeight="8dp"
+            android:paddingLeft="@dimen/margin_left24"
+            android:paddingRight="@dimen/margin_right24"
+            android:paddingTop="10dp"
+            android:scrollbars="none"/>
+    </RelativeLayout>
+
+</LinearLayout>

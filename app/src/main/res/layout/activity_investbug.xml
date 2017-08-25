@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/TwoMatchLayout"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/jrfy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/TwoMatchLayout">
+
+        <LinearLayout
+            style="@style/TwoMatchLayout"
+            android:orientation="vertical">
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_left24"
+                android:paddingRight="@dimen/margin_right24">
+
+                <TextView
+                    android:id="@+id/tv_invest_name"
+                    style="@style/Three30Text"/>
+
+                <TextView
+                    style="@style/weightWrapLayout"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:text="@string/nhll"
+                    android:textColor="@color/nine_color"
+                    android:textSize="@dimen/text_size24"/>
+
+                <TextView
+                    android:id="@+id/tv_invest_precent"
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/touzi_fenshu"
+                    android:textSize="@dimen/text_size24"/>
+
+                <TextView
+                    style="@style/TwoWrapLayout"
+                    android:layout_centerVertical="true"
+                    android:text="@string/zq"
+                    android:textColor="@color/nine_color"
+                    android:textSize="@dimen/text_size24"/>
+
+                <TextView
+                    android:id="@+id/tv_invest_date"
+                    style="@style/TwoWrapLayout"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="9.00%"
+                    android:textColor="@color/touzi_fenshu"
+                    android:textSize="@dimen/text_size24"/>
+            </LinearLayout>
+
+            <View style="@style/xian"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_left24"
+                android:paddingRight="@dimen/margin_right24">
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:text="@string/syje"/>
+
+
+                <TextView
+                    android:id="@+id/tv_rest_money"
+                    style="@style/Three30Text"
+                    android:layout_marginLeft="5dp"
+                    android:text="88888.88"
+                    android:textSize="17sp"/>
+
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/yuan"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <View style="@style/xian"/>
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                style="@style/MacthWrapLayout"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/gmje"/>
+
+                <TextView
+                    android:id="@+id/tv_invest_tip"
+                    style="@style/TwoWrapLayout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/nine_color"
+                    android:textSize="@dimen/text_size24"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/rect_gray5">
+
+                    <TextView
+                        android:id="@+id/tv_invest_money"
+                        style="@style/TwoWrapLayout"
+                        android:layout_centerInParent="true"
+                        android:background="@null"
+                        android:textColor="@color/touzi_fenshu"
+                        android:textSize="@dimen/text_size36"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yuan"
+                        android:layout_toRightOf="@+id/tv_invest_money"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageButton
+                        android:id="@+id/btn_invest_reduce"
+                        style="@style/TwoWrapLayout"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="9dp"
+                        android:background="@null"
+                        android:src="@drawable/touzijiner_jian"/>
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/xian"/>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/xian"/>
+
+
+                    <ImageButton
+                        android:id="@+id/btn_invest_add"
+                        style="@style/TwoWrapLayout"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="9dp"
+                        android:background="@null"
+                        android:src="@drawable/touzijiner_jia"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/xian"/>
+
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="6dp"/>
+
+            <LinearLayout
+                style="@style/MacthWrapLayout"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/zffs"/>
+
+
+                <LinearLayout
+                    style="@style/MacthWrapLayout"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_wallet_pay"
+                        style="@style/TwoWrapLayout"
+                        android:padding="5dp"
+                        android:src="@drawable/agree_cai"/>
+
+                    <TextView
+                        style="@style/Three30Text"
+                        android:layout_marginLeft="7dp"
+                        android:text="@string/qbye"/>
+
+                    <TextView
+                        style="@style/Three30Text"
+                        android:layout_marginLeft="7dp"
+                        android:text="("/>
+
+                    <TextView
+                        android:id="@+id/tv_wallet_money"
+                        style="@style/TwoWrapLayout"
+                        android:textColor="#E97110"/>
+
+
+                    <TextView
+                        style="@style/Three30Text"
+                        android:text="@string/kyk"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/MacthWrapLayout"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_card_pay"
+                        style="@style/TwoWrapLayout"
+                        android:padding="5dp"
+                        android:src="@drawable/agree_hui"/>
+
+                    <TextView
+                        style="@style/Three30Text"
+                        android:layout_marginLeft="7dp"
+                        android:text="@string/bankcard"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MacthWrapLayout"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+
+                <LinearLayout
+                    style="@style/MacthWrapLayout"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/tv_protocol"
+                        style="@style/TwoWrapLayout"
+                        android:layout_marginLeft="15dp"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:src="@drawable/agree_cai"
+                        android:visibility="visible"/>
+
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:text="@string/wydyty"
+                        android:textColor="@color/six_color"
+                        android:textSize="@dimen/text_size24"/>
+
+
+                    <TextView
+                        android:id="@+id/tv_loan_protocol"
+                        style="@style/TwoWrapLayout"
+                        android:text="@string/jdfwxy"
+                        android:textColor="@color/touzi_fenshu"
+                        android:textSize="@dimen/text_size24"/>
+
+                    <TextView
+                        android:id="@+id/tv_scatter_protocol"
+                        style="@style/TwoWrapLayout"
+                        android:text="@string/stfwxy"
+                        android:textColor="@color/touzi_fenshu"
+                        android:textSize="@dimen/text_size24"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_join_now"
+                    style="@style/myOrangeButton"
+                    android:text="@string/qrjr"
+                    android:textSize="@dimen/text_size36"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

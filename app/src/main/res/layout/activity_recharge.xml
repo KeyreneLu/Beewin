@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/hbcz"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <View
+        style="@style/xian"
+        android:layout_marginTop="8dp"/>
+
+    <ScrollView
+        style="@style/MacthWrapLayout"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/MacthWrapLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/MacthWrapLayout"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="25dp">
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/gmsl"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+
+                    <TextView
+                        android:id="@+id/btn_hundred_coin"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_blue1"
+                        android:gravity="center"
+                        android:text="@string/coin100"
+                        android:textColor="@color/touzi_fenshu"
+                        android:textSize="@dimen/text_size30"/>
+
+                    <TextView
+                        android:id="@+id/btn_thousand_coin"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_gray7"
+                        android:gravity="center"
+                        android:text="@string/coin1000"
+                        android:textColor="@color/three_color"
+                        android:textSize="@dimen/text_size30"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+
+                    <TextView
+                        android:id="@+id/btn_wan_coin"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_gray7"
+                        android:gravity="center"
+                        android:text="@string/coin10000"
+                        android:textColor="@color/three_color"
+                        android:textSize="@dimen/text_size30"/>
+
+                    <RelativeLayout
+                        android:id="@+id/btn_other_coin"
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="17dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect_gray7">
+
+                        <EditText
+                            android:id="@+id/et_other"
+                            style="@style/TwoMatchLayout"
+                            android:background="@null"
+                            android:cursorVisible="false"
+                            android:gravity="center"
+                            android:hint="@string/othercoin"
+                            android:textColorHint="@color/three_color"
+                            android:textSize="@dimen/text_size30"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                style="@style/xian"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/xj"/>
+
+                <TextView
+                    android:id="@+id/tv_user_pay"
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="1元"
+                    android:textColor="@color/chengse"
+                    android:textSize="@dimen/text_size30"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                style="@style/MacthWrapLayout"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/zffs"/>
+
+                <LinearLayout
+                    style="@style/MacthWrapLayout"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/iv_wallet_pay"
+                        style="@style/TwoWrapLayout"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:src="@drawable/agree_cai"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        style="@style/Three30Text"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/qbyee"/>
+
+                    <TextView
+                        style="@style/Three30Text"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginTop="2dp"
+                        android:text="("/>
+
+                    <TextView
+                        android:id="@+id/tv_wallet_money"
+                        style="@style/TwoWrapLayout"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/chengse"
+                        android:textSize="@dimen/text_size30"/>
+                    <TextView
+                        style="@style/Three30Text"
+                        android:layout_marginTop="2dp"
+                        android:text="可用)"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/xian"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/MacthWrapLayout"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/iv_protocol"
+                        style="@style/TwoWrapLayout"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:src="@drawable/agree_cai"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:layout_marginTop="12dp"
+                        android:text="我已阅读并同意"
+                        android:textColor="#666666"
+                        android:textSize="12sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_coin_protocol"
+                        style="@style/TwoWrapLayout"
+                        android:layout_marginTop="12dp"
+                        android:text="《花币使用协议》"
+                        android:textColor="@color/touzi_fenshu"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_bug_now"
+                    style="@style/myOrangeButton"
+                    android:text="@string/qrgm"
+                    android:textSize="@dimen/text_size36"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

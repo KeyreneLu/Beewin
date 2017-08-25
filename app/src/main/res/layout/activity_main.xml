@@ -1,0 +1,54 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <com.whale.beewin.view.NoScrollViewPager
+        android:id="@+id/viewpager"
+        style="@style/TwoMatchLayout"/>
+
+    <View
+        style="@style/xian"
+        android:layout_above="@+id/radioGroup1"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_home"
+            style="@style/MyRadioButtonStyle"
+            android:checked="true"
+            android:drawableTop="@drawable/main_home_selector"
+            android:text="@string/qb"/>
+
+        <RadioButton
+            android:id="@+id/radio_invest"
+            style="@style/MyRadioButtonStyle"
+            android:drawableTop="@drawable/main_invest_selector"
+            android:text="@string/tz"/>
+
+        <RadioButton
+            android:id="@+id/radio_loan"
+            style="@style/MyRadioButtonStyle"
+            android:drawableTop="@drawable/main_loan_selector"
+            android:text="@string/jq"/>
+
+        <RadioButton
+            android:id="@+id/radio_found"
+            style="@style/MyRadioButtonStyle"
+            android:drawableTop="@drawable/main_found_selector"
+            android:text="@string/find"/>
+
+        <RadioButton
+            android:id="@+id/radio_me"
+            style="@style/MyRadioButtonStyle"
+            android:drawableTop="@drawable/main_me_selector"
+            android:text="@string/me"/>
+    </RadioGroup>
+</RelativeLayout>

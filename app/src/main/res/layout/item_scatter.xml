@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/TwoMatchLayout">
+
+    <LinearLayout
+        style="@style/MacthWrapLayout"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_left24"
+        android:paddingRight="@dimen/margin_right24">
+
+        <RelativeLayout
+            style="@style/MacthWrapLayout"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv"
+                style="@style/TwoWrapLayout"
+                android:text="@string/tbsj"
+                android:textColor="@color/three_color"
+                android:textSize="@dimen/text_size30"/>
+
+            <TextView
+                android:id="@+id/tv_scatter_date"
+                style="@style/TwoWrapLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv"
+                android:text="2017-03-21 15:49:55"
+                android:textColor="@color/e_red"
+                android:textSize="@dimen/text_size30"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/MacthWrapLayout"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/TwoWrapLayout"
+                android:layout_centerVertical="true"
+                android:text="@string/tbje"
+                android:textColor="@color/three_color"
+                android:textSize="@dimen/text_size30"/>
+
+            <TextView
+                android:id="@+id/tv_scatter_sum"
+                style="@style/TwoWrapLayout"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv1"
+                android:text="2000.00"
+                android:textColor="@color/touzi_fenshu"
+                android:textSize="@dimen/text_size30"/>
+
+            <ImageView
+                android:id="@+id/iv_right"
+                style="@style/MyImageViewStyle"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+           style="@style/MacthWrapLayout"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/TwoWrapLayout"
+                android:text="@string/tbqc"
+                android:textColor="@color/three_color"
+                android:textSize="@dimen/text_size30"/>
+
+            <TextView
+                android:id="@+id/tv_scatter_time"
+                style="@style/TwoWrapLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:text="3个月"
+                android:textColor="@color/touzi_fenshu"
+                android:textSize="@dimen/text_size30"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

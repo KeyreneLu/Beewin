@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:id="@+id/main_content"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/smrz"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+    <View style="@style/xian"/>
+
+    <RelativeLayout
+        android:id="@+id/rz_top"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_progress"
+            style="@style/MacthWrapLayout"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+               style="@style/TwoWrapLayout"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="@string/smrz"
+                android:textColor="@color/touzi_fenshu"
+                android:textSize="@dimen/text_size26"/>
+
+            <TextView
+              style="@style/weightWrapLayout"
+                android:gravity="center"
+                android:text="@string/bdyhk"
+                android:textColor="@color/nine_color"
+                android:textSize="@dimen/text_size26"/>
+
+            <TextView
+                style="@style/TwoWrapLayout"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:text="充值"
+                android:textColor="@color/nine_color"
+                android:textSize="@dimen/text_size26"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@+id/ll_progress"
+            android:layout_marginRight="38dp"
+            android:layout_marginTop="3dp"
+            android:max="100"
+            android:progress="33"
+            android:progressDrawable="@drawable/progressbar_bg"/>
+
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <View
+        style="@style/xian"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        style="@style/white45layout">
+
+            <TextView
+                android:id="@+id/tv"
+                style="@style/Three30Text"
+                android:paddingLeft="@dimen/margin_left24"
+                android:layout_centerVertical="true"
+                android:text="@string/xm"/>
+
+
+            <EditText
+                android:id="@+id/et_real_name"
+                style="@style/TwoMatchLayout"
+                android:layout_toRightOf="@+id/tv"
+                android:layout_marginRight="@dimen/margin_right24"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/rz_tip"
+                android:textColor="@color/three_color"
+                android:textColorHint="@color/nine_color"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_size30"/>
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/white45layout">
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/Three30Text"
+            android:paddingLeft="@dimen/margin_left24"
+            android:layout_centerVertical="true"
+            android:text="@string/sfz"/>
+
+
+        <EditText
+            android:id="@+id/et_person_ID"
+            style="@style/TwoMatchLayout"
+            android:layout_toRightOf="@+id/tv1"
+            android:layout_marginRight="@dimen/margin_right24"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/rz_tip2"
+            android:textColor="@color/three_color"
+            android:textColorHint="@color/nine_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size30"/>
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_card_bank"
+        style="@style/white45layout">
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/Three30Text"
+            android:paddingLeft="@dimen/margin_left24"
+            android:layout_centerVertical="true"
+            android:text="@string/yh1"/>
+
+        <TextView
+            android:id="@+id/tv_bank"
+            style="@style/Three30Text"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/iv"/>
+
+        <ImageView
+            android:id="@+id/iv"
+            style="@style/MyImageViewStyle"/>
+
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/white45layout">
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/Three30Text"
+            android:paddingLeft="@dimen/margin_left24"
+            android:layout_centerVertical="true"
+            android:text="@string/kh"/>
+
+
+        <EditText
+            android:id="@+id/et_bank_card"
+            style="@style/TwoMatchLayout"
+            android:layout_toRightOf="@+id/tv3"
+            android:layout_marginRight="@dimen/margin_right24"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/rz_tip3"
+            android:textColor="@color/three_color"
+            android:textColorHint="@color/nine_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size30"/>
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_bank_address"
+        android:visibility="gone"
+        style="@style/white45layout">
+
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/Three30Text"
+            android:paddingLeft="@dimen/margin_left24"
+            android:layout_centerVertical="true"
+            android:text="@string/khh"/>
+
+
+        <EditText
+            android:id="@+id/et_bank_address"
+            style="@style/TwoMatchLayout"
+            android:layout_toRightOf="@+id/tv4"
+            android:layout_marginRight="@dimen/margin_right24"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="@string/rz_tip7"
+            android:textColor="@color/three_color"
+            android:textColorHint="@color/nine_color"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size30"/>
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        style="@style/MacthWrapLayout">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_margin="@dimen/margin_left24"
+            android:src="@drawable/nologin"/>
+
+        <TextView
+            android:id="@+id/tip1"
+            style="@style/MacthWrapLayout"
+            android:layout_alignTop="@+id/iv1"
+            android:layout_marginRight="@dimen/margin_right24"
+            android:layout_toRightOf="@+id/iv1"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/rz_tip4"
+            android:textColor="@color/six_color"
+            android:textSize="@dimen/text_size24"/>
+
+
+        <TextView
+            android:id="@+id/tv5"
+          style="@style/MacthWrapLayout"
+            android:layout_below="@+id/tip1"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv1"
+            android:text="@string/rz_tip5"
+            android:textColor="@color/six_color"
+            android:textSize="@dimen/text_size24"/>
+
+
+        <TextView
+            android:id="@+id/tv_one_yuan"
+            style="@style/MacthWrapLayout"
+            android:layout_below="@+id/tv5"
+            android:layout_marginRight="@dimen/margin_right24"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/iv1"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/rz_tip6"
+            android:textColor="@color/six_color"
+            android:textSize="@dimen/text_size24"/>
+    </RelativeLayout>
+    <View android:layout_height="0dp"
+          android:layout_weight="1"
+          android:layout_width="match_parent"/>
+    <Button
+        android:id="@+id/btn_real_name"
+        style="@style/MySureButton"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="@dimen/margin_left24"
+        android:layout_marginRight="@dimen/margin_right24"
+        android:text="@string/qr"
+        android:textSize="@dimen/text_size40"/>
+</LinearLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <View
+        style="@style/xian"
+        android:layout_marginTop="8dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:background="@color/white"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/nhll"/>
+
+                <TextView
+                    android:id="@+id/tv_invest_date"
+                    style="@style/Three30Text"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/touzi_fenshu"/>
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@id/tv_invest_date"
+                    android:text="@string/zqm"/>
+
+                <TextView
+                    android:id="@+id/tv_invest_precent"
+                    style="@style/TwoWrapLayout"
+                    android:layout_below="@+id/tv_invest_date"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/e_nine"
+                    android:textSize="@dimen/text_size50"/>
+
+                <ProgressBar
+                    android:id="@+id/progressbar2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/tv_invest_precent"
+                    android:layout_marginTop="10dp"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progressbar_orange_bg"/>
+
+                <TextView
+                    android:id="@+id/tv"
+                    style="@style/Three30Text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/ysm"
+                    android:textSize="@dimen/text_size26"/>
+
+
+                <TextView
+                    android:id="@+id/tv_sold_precent"
+                    style="@style/Three30Text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tv"
+                    android:textSize="@dimen/text_size26"/>
+
+
+                <TextView
+                    android:id="@+id/tv1"
+                    style="@style/Three30Text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/yuan"/>
+
+                <TextView
+                    android:id="@+id/tv_sold_money"
+                    style="@style/Three30Text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/tv1"
+                    android:textColor="@color/e_nine"/>
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/tv_sold_money"
+                    android:text="@string/sym"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    style="@style/weightWrapLayout"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Three30Text"
+                        android:text="@string/qmje"
+                        android:textSize="@dimen/text_size24"/>
+
+                    <TextView
+                        android:id="@+id/tv_start_money"
+                        style="@style/Three30Text"
+                        android:textColor="@color/e_nine"
+                        android:textSize="@dimen/text_size24"/>
+
+                    <TextView
+                        style="@style/Three30Text"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/yuan"
+                        android:textSize="@dimen/text_size24"/>
+                </LinearLayout>
+
+                <View style="@style/ShuXian"/>
+
+
+                <LinearLayout
+                    style="@style/weightWrapLayout"
+                    android:gravity="left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        style="@style/Three30Text"
+                        android:text="@string/rzje"
+                        android:textSize="@dimen/text_size24"/>
+
+                    <TextView
+                        android:id="@+id/tv_all_money"
+                        style="@style/Three30Text"
+                        android:textColor="@color/e_nine"
+                        android:textSize="@dimen/text_size24"/>
+
+                    <TextView
+                        style="@style/Three30Text"
+                        android:text="@string/yuan"
+                        android:textSize="@dimen/text_size24"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/xian"/>
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="8dp"/>
+
+            <RelativeLayout
+                style="@style/MacthWrapLayout"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    style="@style/TwoWrapLayout"
+                    android:layout_marginTop="20dp"
+                    android:text="起息时间:"
+                    android:textColor="@color/six_color"
+                    android:textSize="@dimen/text_size24"/>
+
+                <TextView
+                    android:id="@+id/tv_return_way"
+                    style="@style/TwoWrapLayout"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/tv2"
+                    android:text="T(成交日)+1"
+                    android:textColor="@color/six_color"
+                    android:textSize="@dimen/text_size24"/>
+
+                <TextView
+                    android:id="@+id/tv3"
+                    style="@style/TwoWrapLayout"
+                    android:layout_below="@+id/tv2"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/hkfsm"
+                    android:textColor="@color/six_color"
+                    android:textSize="@dimen/text_size24"/>
+
+                <TextView
+                    android:id="@+id/tv_back_way"
+                    style="@style/TwoWrapLayout"
+                    android:layout_below="@+id/tv2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/tv3"
+                    android:text="先息后本"
+                    android:textColor="@color/six_color"
+                    android:textSize="@dimen/text_size24"/>
+
+                <TextView
+                    android:id="@+id/tv_see_contract"
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv3"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/ckht"
+                    android:textColor="@color/e_nine"
+                    android:textSize="@dimen/text_size24"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="8dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_have_sold"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/yglb"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    style="@style/MyImageViewStyle"/>
+
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_invest_detail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white">
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/xmxq"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    style="@style/MyImageViewStyle"/>
+
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rl_safe_ensure"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white">
+
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/aqbz"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    style="@style/MyImageViewStyle"/>
+
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_back_source"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/white">
+
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/hkly"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    style="@style/MyImageViewStyle"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <Button
+                android:id="@+id/btn_join_now"
+                style="@style/myOrangeButton"
+                android:text="@string/ljtz"
+                android:textSize="@dimen/text_size36"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/TwoMatchLayout"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/wdewm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_qr_code"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"/>
+
+    <LinearLayout
+        style="@style/MacthWrapLayout"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+          style="@style/TwoWrapLayout"
+            android:text="@string/ndyqm"
+            android:textColor="@color/six_color"
+          android:textSize="@dimen/text_size26"/>
+
+        <TextView
+            android:id="@+id/tv_qr_code"
+            style="@style/TwoWrapLayout"
+            android:layout_marginLeft="8dp"
+            android:text="未登录"
+            android:textColor="@color/six_color"
+            android:textSize="@dimen/text_size26"/>
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/Three30Text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/shuoming"
+        android:textSize="14sp"/>
+
+    <TextView
+        style="@style/Three30Text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/shuoming_one"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        style="@style/Three30Text"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/shuoming_two"
+        android:textSize="12sp"/>
+
+
+</LinearLayout>

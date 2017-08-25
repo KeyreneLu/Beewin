@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageButton
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/zc"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/Three30Text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:text="@string/zh"/>
+
+        <EditText
+            android:id="@+id/et_user_name"
+            style="@style/Three30Edittext"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            android:cursorVisible="true"
+            android:hint="@string/qsrndsjh"
+            android:inputType="number"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/xian"
+        android:layout_marginLeft="@dimen/margin_right24"/>
+
+    <!--图片 验证码 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/Three30Text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:text="@string/yzm"/>
+
+        <EditText
+            android:id="@+id/et_pic_code"
+            style="@style/Three30Edittext"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            android:layout_toLeftOf="@+id/iv_modify_identifying"
+            android:cursorVisible="true"
+            android:hint="@string/qsrtxyzm"
+            android:inputType="number"/>
+
+        <ImageView
+            android:id="@+id/iv_modify_identifying"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"/>
+
+    </RelativeLayout>
+
+    <View
+        style="@style/xian"
+        android:layout_marginLeft="@dimen/margin_right24"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/Three30Text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:text="@string/yzm"/>
+
+
+        <EditText
+            android:id="@+id/et_phone_code"
+            style="@style/Three30Edittext"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            android:cursorVisible="true"
+            android:hint="@string/qsrsjyzm"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/btn_ask_code"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/rect_blue_normal"
+            android:text="@string/hqyzm"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/xian"
+        android:layout_marginLeft="@dimen/margin_right24"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/Three30Text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left24"
+                android:text="@string/mm"/>
+
+            <EditText
+                android:id="@+id/et_user_password"
+                style="@style/Three30Edittext"
+                android:layout_marginLeft="80dp"
+                android:hint="@string/qsrmm"
+                android:inputType="textPassword"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/WrapMatchLayout"
+            android:layout_marginRight="@dimen/margin_right24">
+
+            <ImageView
+                android:id="@+id/iv_clear"
+                android:layout_width="@dimen/text_size36"
+                android:layout_height="@dimen/text_size36"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@mipmap/dl_qx"/>
+
+            <ImageView
+                android:id="@+id/iv_saw"
+                android:layout_width="@dimen/text_size36"
+                android:layout_height="@dimen/text_size36"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_clear"
+                android:src="@mipmap/dl_yc1"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        style="@style/xian"
+        android:layout_marginLeft="@dimen/margin_right24"/>
+
+    <TextView
+        style="@style/TwoWrapLayout"
+        android:layout_marginLeft="@dimen/margin_left24"
+        android:singleLine="true"
+        android:text="密码为6-12位字符，至少包含数字 字母符号"
+        android:textColor="@color/nine_color"
+        android:textSize="11sp"/>
+
+
+    <!-- 邀请码 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/Three30Text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:text="@string/mm"/>
+
+
+        <EditText
+            android:id="@+id/et_invite_code"
+            style="@style/Three30Edittext"
+            android:layout_marginLeft="80dp"
+            android:hint="请输入好友邀请码(选填)"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/xian"
+        android:layout_marginLeft="@dimen/margin_right24"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_left24">
+
+        <ImageView
+            android:id="@+id/iv_protocol_state"
+            style="@style/TwoWrapLayout"
+            android:background="@null"
+            android:padding="5dp"
+            android:src="@drawable/agree_cai"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:text="@string/wydyty"
+            android:textColor="@color/six_color"
+            android:textSize="@dimen/text_size24"/>
+
+        <TextView
+            android:id="@+id/tv_protocol"
+            style="@style/TwoWrapLayout"
+            android:text="@string/xieyi"
+            android:textColor="@color/touzi_fenshu"
+            android:textSize="@dimen/text_size24"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/MySureButton"
+        android:layout_below="@+id/view3"
+        android:layout_marginLeft="@dimen/margin_left24"
+        android:layout_marginRight="@dimen/margin_right24"
+        android:clickable="false"
+        android:text="@string/zc"/>
+</LinearLayout>

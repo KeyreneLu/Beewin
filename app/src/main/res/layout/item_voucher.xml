@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             style="@style/TwoMatchLayout">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:elevation="3dp">
+
+        <ImageView
+            android:id="@+id/rl_card_pic"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"/>
+
+        <TextView
+            android:id="@+id/cash_money"
+           style="@style/TwoWrapLayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="10元"
+            android:textColor="@color/three_a"
+            android:textSize="@dimen/text_size30"/>
+
+        <TextView
+            android:id="@+id/tv_card_type"
+            style="@style/TwoWrapLayout"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:text="代金券"
+            android:layout_toRightOf="@+id/cash_money"
+            android:textColor="@color/three_a"
+            android:textSize="@dimen/text_size30"/>
+
+        <TextView
+            android:id="@+id/tv_lose"
+            style="@style/TwoWrapLayout"
+            android:layout_alignLeft="@+id/cash_money"
+            android:layout_alignStart="@+id/cash_money"
+            android:layout_below="@+id/cash_money"
+            android:layout_marginTop="8dp"
+            android:text="@string/dhhb"
+            android:textColor="@color/six_two"
+            android:textSize="@dimen/text_size24"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/TwoWrapLayout"
+            android:layout_alignTop="@+id/tv_lose"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/tv_lose"
+            android:layout_toRightOf="@+id/tv_lose"
+            android:text="2016"
+            android:textColor="@color/touzi_fenshu"
+            android:textSize="@dimen/text_size24"/>
+
+        <TextView
+            android:id="@+id/tv_silver"
+            style="@style/TwoWrapLayout"
+            android:layout_alignTop="@+id/tv_time"
+            android:layout_marginLeft="3dp"
+            android:layout_toEndOf="@+id/tv_time"
+            android:layout_toRightOf="@+id/tv_time"
+            android:text="@string/hb"
+            android:textSize="@dimen/text_size24"/>
+
+        <ImageView
+            android:id="@+id/iv_choose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5.4"
+                >
+
+                <TextView
+                    style="@style/TwoWrapLayout"
+                    android:layout_marginRight="3dp"
+                    android:layout_toLeftOf="@+id/tv_deadline"
+                    android:text="有效期:"
+                    android:textColor="@color/nine_color"
+                    android:textSize="@dimen/text_size22"/>
+
+                <TextView
+                    android:id="@+id/tv_deadline"
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:text="永久"
+                    android:textColor="@color/nine_color"
+                    android:textSize="@dimen/text_size22"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

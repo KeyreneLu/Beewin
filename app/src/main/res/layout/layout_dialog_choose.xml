@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black2">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/bg">
+
+        <Button
+            android:id="@+id/takePhotoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:text="@string/pz"
+            android:textColor="@color/three_color"
+            android:textSize="@dimen/text_size30"/>
+        <View
+            style="@style/xian"/>
+
+        <Button
+            android:id="@+id/pickPhotoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:text="@string/csjxcxz"
+            android:textColor="@color/three_color"
+            android:textSize="@dimen/text_size30"/>
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/white"
+            android:text="@string/qx"
+            android:textColor="@color/three_six"
+            android:textSize="@dimen/text_size34"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/TwoMatchLayout"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:indeterminateDrawable="@drawable/big_loading"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="拼命加载中..."
+            android:textColor="@android:color/black"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_content"
+        style="@style/TwoMatchLayout"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/touzi_fenshu">
+
+            <ImageView
+                android:id="@+id/iv_home_left"
+                style="@style/TwoWrapLayout"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:padding="10dp"
+                android:src="@drawable/back_left_big"/>
+
+            <TextView
+                style="@style/TwoWrapLayout"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/wdstb"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size36"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_none"
+            style="@style/TwoMatchLayout"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/TwoWrapLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/huaer"/>
+
+            <TextView
+                style="@style/TwoWrapLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="@string/none4"
+                android:textColor="@color/nine_color"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/button_me_scatter"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rect_blue1"
+                android:gravity="center"
+                android:text="@string/ljst"
+                android:textColor="@color/touzi_fenshu"
+                android:textSize="15sp"/>
+
+            <ImageView
+                style="@style/TwoWrapLayout"
+                android:paddingLeft="@dimen/margin_left24"
+                android:paddingRight="@dimen/margin_right24"
+                android:src="@mipmap/santou"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@color/xian"
+            android:dividerHeight="2dp"
+            android:scrollbars="none"
+            android:visibility="gone"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/dl"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+    <View
+        style="@style/xian"/>
+    <RelativeLayout
+        style="@style/TwoMatchLayout"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/login_page"/>
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/iv">
+
+            <TextView
+                style="@style/Three30Text"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left24"
+                android:paddingLeft="3dp"
+                android:text="@string/zh"/>
+
+            <EditText
+                android:id="@+id/et_user_name"
+                style="@style/Three30Edittext"
+                android:layout_marginLeft="80dp"
+                android:hint="@string/qsrndsjh"
+                android:inputType="number"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view2"
+            style="@style/xian"
+            android:layout_below="@+id/rl"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:layout_marginRight="@dimen/margin_right24"/>
+
+        <LinearLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/view2">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <TextView
+                   style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:paddingLeft="3dp"
+                    android:text="@string/mm"/>
+
+                <EditText
+                    android:id="@+id/et_user_password"
+                    style="@style/Three30Edittext"
+                    android:layout_marginLeft="80dp"
+                    android:hint="@string/qsrmm"
+                    android:inputType="textPassword"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/WrapMatchLayout"
+                android:layout_marginRight="@dimen/margin_right24">
+
+                <ImageView
+                    android:id="@+id/iv_clear"
+                    android:layout_width="@dimen/text_size36"
+                    android:layout_height="@dimen/text_size36"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@mipmap/dl_qx"/>
+
+                <ImageView
+                    android:id="@+id/iv_saw"
+                    android:layout_width="@dimen/text_size36"
+                    android:layout_height="@dimen/text_size36"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/iv_clear"
+                    android:src="@mipmap/dl_yc1"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view3"
+            style="@style/xian"
+            android:layout_below="@+id/rl1"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:layout_marginRight="@dimen/margin_right24"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/MySureButton"
+            android:layout_below="@+id/view3"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:layout_marginRight="@dimen/margin_right24"
+            android:clickable="false"
+            android:text="@string/dl"/>
+
+        <TextView
+            android:id="@+id/tv_forget_password"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:text="@string/wjmmw"
+            android:textColor="@color/touzi_fenshu"
+            android:textSize="@dimen/text_size30"/>
+
+        <TextView
+            android:id="@+id/tv_register"
+            style="@style/TwoWrapLayout"
+            android:text="@string/xyh"
+            android:textColor="@color/touzi_fenshu"
+            android:textSize="@dimen/text_size30"
+            android:layout_alignBaseline="@+id/tv_forget_password"
+            android:layout_alignBottom="@+id/tv_forget_password"
+            android:layout_alignRight="@+id/btn_login"
+            android:layout_alignEnd="@+id/btn_login"/>
+    </RelativeLayout>
+</LinearLayout>

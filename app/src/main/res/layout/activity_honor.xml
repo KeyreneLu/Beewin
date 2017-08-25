@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/xyd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <ScrollView
+       style="@style/MacthWrapLayout"
+        android:scrollbars="none">
+
+    <LinearLayout
+        style="@style/MacthWrapLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/MacthWrapLayout"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:background="@color/touzi_fenshu">
+
+                <ImageButton
+                    android:id="@+id/iv_honor_tip"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@null"
+                    android:padding="15dp"
+                    android:src="@drawable/wen_bai"/>
+
+
+                <com.whale.beewin.activity.loan.view.SesameCreditPanel
+                    android:id="@+id/seSameCreditPanel"
+                    style="@style/TwoWrapLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"/>
+
+                <LinearLayout
+                    style="@style/MacthWrapLayout"
+                    android:layout_marginTop="170dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_lend_money"
+                        style="@style/TwoWrapLayout"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/kjed"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_honor_now"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rect_blue3"
+                    android:text="@string/djjk"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            style="@style/MacthWrapLayout"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+               style="@style/weightWrapLayout">
+
+                <com.whale.beewin.view.RingView
+                    android:id="@+id/pb2"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_centerInParent="true"
+                    app:border_color="@color/e_nine"/>
+
+                <RelativeLayout
+                    style="@style/TwoWrapLayout"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/tv_repay_money"
+                        style="@style/TwoWrapLayout"
+                        android:layout_centerHorizontal="true"
+                        android:text="0.00"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/tv_repay_money"
+                        android:text="@string/djhk"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_below="@+id/pb2"
+                    android:layout_marginTop="15dp"
+                    style="@style/TwoWrapLayout"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/byyhk"
+                    android:textColor="#000000"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/weightWrapLayout">
+        <com.whale.beewin.view.RingView
+            android:id="@+id/pb"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            app:border_color="@color/three_zero"/>
+
+        <RelativeLayout
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tv_credit_rating"
+                style="@style/TwoWrapLayout"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:text="0"
+                android:textSize="16sp"/>
+
+            <TextView
+                style="@style/TwoWrapLayout"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/tv_credit_rating"
+                android:text="@string/xyts"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_below="@+id/pb"
+            android:layout_marginTop="15dp"
+            style="@style/TwoWrapLayout"
+            android:layout_centerHorizontal="true"
+            android:text="@string/xyd2"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</LinearLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="300dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relate_huankuan"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_repay_money"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="0.00"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="16sp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="点击还款"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="16sp"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<com.jdyy.beewin.view.RingView-->
+    <!--app:border_color="@color/e_nine"-->
+    <!--android:id="@+id/roundProgressBar2"-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:layout_centerInParent="true"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="160dp"-->
+    <!--android:text="本月应还款"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="18sp"/>-->
+    <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relate_xingyongdu"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textview_xinyongtisheng"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:gravity="center"-->
+    <!--android:text="0°"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="16sp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="信用提升"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="16sp"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<com.jdyy.beewin.view.RingView-->
+    <!--app:border_color="@color/three_zero"-->
+    <!--android:id="@+id/roundProgressBar3"-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="200dp"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="160dp"-->
+    <!--android:text="信用度"-->
+    <!--android:textColor="#000000"-->
+    <!--android:textSize="18sp"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="150dp"/>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>

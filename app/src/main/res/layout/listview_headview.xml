@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/TwoMatchLayout"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/MacthWrapLayout"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@mipmap/cp_bgb"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="18dp"
+                    android:text="蜂赢散投"
+                    android:textColor="@color/three_color"
+                    android:textSize="@dimen/text_size24"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/shap_touzi_juan"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="现金劵"
+                    android:textColor="@color/e_nine"
+                    android:textSize="10sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/shap_touzi_shoutou"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="@string/stjl1"
+                    android:textColor="@color/touzi_fenshu"
+                    android:textSize="@dimen/text_size20"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:background="@drawable/shap_chongzhi"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:text="现金红包"
+                    android:textColor="@color/e_red"
+                    android:textSize="@dimen/text_size20"
+                    android:textStyle="bold"/>
+
+                <RelativeLayout
+                    style="@style/TwoMatchLayout">
+
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/zuire_png"
+                        android:focusable="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size20"
+                        android:textStyle="bold"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@mipmap/cp_bg"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:layout_gravity="center_horizontal"
+                        android:text="12%-16%"
+                        android:textColor="@color/e_red"
+                        android:textSize="@dimen/text_size44"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:text="综合收益率"
+                        android:textColor="@color/a_five"
+                        android:textSize="@dimen/text_size28"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/TwoWrapLayout"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:layout_gravity="center_horizontal"
+                        android:text="3-12个月"
+                        android:textColor="@color/three_a"
+                        android:textSize="@dimen/text_size32"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
+                        android:text="期限"
+                        android:textColor="@color/a_five"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <com.whale.beewin.view.CircleProgressView_red
+                        android:id="@+id/progressbar_touzi"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

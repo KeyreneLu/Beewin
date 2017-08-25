@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        
+        
+        <TextView
+            android:id="@+id/textview_ljsy_item_time" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-07-31"
+            android:textColor="#666666"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"/>
+            
+        
+         <TextView
+             android:id="@+id/textview_ljsy_item_zrsy" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.22元"
+            android:textColor="#666666"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"/>
+
+        </RelativeLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</LinearLayout>

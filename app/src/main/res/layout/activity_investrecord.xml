@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/zhxx"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/TwoMatchLayout">
+
+        <LinearLayout
+            style="@style/TwoMatchLayout"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/rg_menu"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@android:color/white"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_take_all"
+                    style="@style/MyRadioButtonStyle"
+                    android:checked="true"
+                    android:text="@string/qb2"/>
+
+                <View
+                    android:layout_width="@dimen/xian"
+                    android:layout_height="match_parent"
+                    android:background="@color/xian"/>
+
+                <RadioButton
+                    android:id="@+id/rb_sale_proccess"
+                    style="@style/MyRadioButtonStyle"
+                    android:text="@string/cyz"/>
+
+                <View
+                    android:layout_width="@dimen/xian"
+                    android:layout_height="match_parent"
+                    android:background="@color/xian"/>
+
+                <RadioButton
+                    android:id="@+id/rb_been_back"
+                    style="@style/MyRadioButtonStyle"
+                    android:text="@string/yhk"/>
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/bg">
+
+                <ImageView
+                    android:id="@+id/id_tab_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:background="@color/touzi_fenshu"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_loading"
+                    style="@style/TwoWrapLayout"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@null"
+                        android:indeterminateDrawable="@drawable/big_loading"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="拼命加载中..."
+                        android:textColor="@color/three_a"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:divider="@color/bg"
+                    android:dividerHeight="10dp"
+                    android:paddingTop="8dp"
+                    android:scrollbars="none"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_me_none"
+                    style="@style/TwoWrapLayout"
+                    android:layout_centerInParent="true"
+                    android:background="@color/bg"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        style="@style/TwoWrapLayout"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="25dp"
+                        android:src="@drawable/huaer"
+                        android:visibility="visible"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/none1"
+                        android:textColor="@color/three_a"
+                        android:textSize="15sp"/>
+
+                    <Button
+                        android:id="@+id/button_me_touzi"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rect_blue1"
+                        android:text="@string/ljtz"
+                        android:textColor="@color/touzi_fenshu"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        style="@style/MacthWrapLayout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/img"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:indeterminateDrawable="@drawable/big_loading"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="拼命加载中..."
+            android:textColor="@android:color/black"
+            android:textSize="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_me_none"
+        style="@style/TwoWrapLayout"
+        android:layout_centerInParent="true"
+        android:background="@color/bg"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/TwoWrapLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/mayi"
+            android:visibility="visible"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/none3"
+            android:textColor="@color/three_a"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+    <com.whale.beewin.view.XListView
+        android:id="@+id/xlist"
+        style="@style/TwoMatchLayout"
+        android:divider="@color/xian"
+        android:dividerHeight="@dimen/xian"
+        android:visibility="gone"/>
+</RelativeLayout>

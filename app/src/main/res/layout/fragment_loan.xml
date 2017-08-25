@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="21.5dp"
+        android:background="@color/touzi_fenshu">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/jk"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_realm_name"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="@dimen/margin_left24"
+        android:layout_marginRight="@dimen/margin_right24"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/yellow">
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="@string/ymd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/xy_ymd"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_your_honor"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="@dimen/margin_left24"
+        android:layout_marginRight="@dimen/margin_right24"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/purple">
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="@string/xyd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/xy_xyd"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_small_loan"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="@dimen/margin_left24"
+        android:layout_marginRight="@dimen/margin_right24"
+        android:layout_marginTop="15dp"
+        android:background="@mipmap/blue">
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:text="@string/hzxd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/xy_hzxd"/>
+    </RelativeLayout>
+
+</LinearLayout>

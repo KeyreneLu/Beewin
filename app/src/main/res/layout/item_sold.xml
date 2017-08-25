@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/TwoMatchLayout">
+                <RelativeLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:paddingLeft="@dimen/margin_left24"
+                    android:paddingRight="@dimen/margin_right24">
+
+                   <RelativeLayout
+                       android:layout_centerVertical="true"
+                       style="@style/TwoWrapLayout">
+                       <TextView
+                           android:id="@+id/tv_person_phone"
+                           style="@style/Three30Text"
+                           />
+                       <TextView
+                           android:id="@+id/tv_person_date"
+                           android:layout_marginTop="5dp"
+                           android:layout_below="@+id/tv_person_phone"
+                           style="@style/Three30Text"
+                           android:textColor="@color/nine_color"
+                           android:textSize="@dimen/text_size24"/>
+                   </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_person_sum"
+                        android:layout_alignParentRight="true"
+                        style="@style/Three30Text"
+                        android:textSize="@dimen/text_size34"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+</LinearLayout>

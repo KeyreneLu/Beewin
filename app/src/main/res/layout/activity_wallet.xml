@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/qb"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:indeterminateDrawable="@drawable/big_loading"/>
+
+            <TextView
+                style="@style/TwoWrapLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="拼命加载中..."
+                android:textColor="@color/three_a"
+                android:textSize="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/Main_content"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:background="@color/touzi_fenshu"
+                        android:gravity="center">
+
+
+                        <TextView
+                            android:id="@+id/tv"
+                            style="@style/TwoWrapLayout"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/zrsy"
+                            android:textColor="@color/e_a_color"
+                            android:textSize="@dimen/text_size26"/>
+
+                        <TextView
+                            android:id="@+id/tv_come_back"
+                            style="@style/TwoWrapLayout"
+                            android:layout_below="@+id/tv"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size70"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_wallet_balance"
+                            style="@style/WeightMatchLayout"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv1"
+                                style="@style/TwoWrapLayout"
+                                android:text="@string/qbye"
+                                android:textColor="@color/three_a"
+                                android:textSize="@dimen/text_size24"/>
+
+                            <TextView
+                                android:id="@+id/tv_wallet_money"
+                                style="@style/TwoWrapLayout"
+                                android:layout_below="@+id/tv1"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/three_a"
+                                android:textSize="@dimen/text_size36"/>
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="@dimen/xian"
+                            android:layout_height="match_parent"
+                            android:background="@color/xian"/>
+
+                        <RelativeLayout
+                            style="@style/WeightMatchLayout"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/tv2"
+                                style="@style/TwoWrapLayout"
+                                android:layout_marginLeft="-3dp"
+                                android:text="@string/qrnhll"
+                                android:textColor="@color/three_a"
+                                android:textSize="@dimen/text_size24"/>
+
+                            <TextView
+                                android:id="@+id/tv_wallet_percent"
+                                style="@style/TwoWrapLayout"
+                                android:layout_below="@+id/tv2"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/three_a"
+                                android:textSize="@dimen/text_size36"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View style="@style/xian"/>
+
+                    <View
+                        style="@style/xian"
+                        android:layout_marginTop="10dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white">
+
+                        <TextView
+                            style="@style/TwoWrapLayout"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/qrnhll"
+                            android:textColor="@color/three_a"
+                            android:textSize="@dimen/text_size26"/>
+
+                        <TextView
+                            style="@style/TwoWrapLayout"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toLeftOf="@+id/tv_real_return"
+                            android:text="@string/wfsy"
+                            android:textColor="@color/three_a"
+                            android:textSize="@dimen/text_size26"/>
+
+                        <TextView
+                            android:id="@+id/tv_real_return"
+                            style="@style/TwoWrapLayout"
+                            android:layout_marginTop="20dp"
+                            android:layout_toLeftOf="@+id/tv5"
+                            android:textColor="@color/touzi_fenshu"
+                            android:textSize="@dimen/text_size26"/>
+
+                        <TextView
+                            android:id="@+id/tv5"
+                            style="@style/TwoWrapLayout"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/yuan"
+                            android:textColor="@color/three_a"
+                            android:textSize="@dimen/text_size26"/>
+
+                        <com.github.mikephil.charting.charts.LineChart
+                            android:id="@+id/linechart"
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+                            android:layout_below="@+id/tv5"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:background="#ffffff"/>
+
+                        <ImageView
+                            android:id="@+id/iv_wallet_linpin"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@mipmap/haoli"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <View style="@style/xian"/>
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_wallet_recharge"
+                    style="@style/WeightMatchLayout"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/tv3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/w_cz"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv3"
+                        android:text="@string/cz"
+                        android:textColor="@color/three_a"
+                        android:textSize="@dimen/text_size34"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/xian"
+                    android:layout_height="match_parent"
+                    android:background="@color/xian"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_wallet_deposit"
+                    style="@style/WeightMatchLayout"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/tv4"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/w_tx"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/tv4"
+                        android:text="@string/tx"
+                        android:textColor="@color/three_a"
+                        android:textSize="@dimen/text_size34"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

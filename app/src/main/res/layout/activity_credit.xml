@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/xyd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:textColor="@color/f_four"
+            android:textSize="@dimen/text_size42"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="—信用越高 额度越高—"/>
+       <RelativeLayout
+           android:layout_centerInParent="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+
+           <com.whale.beewin.view.GradientProgressBar
+               android:id="@+id/progress"
+               android:layout_width="330dp"
+               android:layout_height="330dp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/xyd2"
+               android:textSize="@dimen/text_size38"
+               android:layout_marginTop="190dp"
+               android:layout_marginLeft="190dp"/>
+       </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_perfect_information"
+            android:layout_width="190dp"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:text="@string/wszl"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="43dp"
+            android:textColor="@color/touzi_fenshu"
+            android:textSize="@dimen/text_size36"
+            android:background="@drawable/rect_blue_border2"/>
+
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        style="@style/white45layout">
+        <TextView
+            android:id="@+id/tv_know_honor"
+            android:gravity="center"
+            android:textColor="@color/six_color"
+            android:textSize="@dimen/text_size30"
+            android:text="了解蜂赢信用"
+            style="@style/WeightMatchLayout"/>
+
+        <View style="@style/ShuXian"/>
+
+        <TextView
+            android:id="@+id/tv_more_honor"
+            android:gravity="center"
+            android:textColor="@color/six_color"
+            android:textSize="@dimen/text_size30"
+            android:text="更多提高信用方法"
+            style="@style/WeightMatchLayout"/>
+    </LinearLayout>
+</LinearLayout>

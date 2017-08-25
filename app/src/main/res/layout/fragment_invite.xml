@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        style="@style/TwoWrapLayout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:indeterminateDrawable="@drawable/big_loading"/>
+
+        <TextView
+           style="@style/TwoWrapLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="拼命加载中..."
+            android:textColor="@android:color/black"
+            android:textSize="16dp"/>
+    </LinearLayout>
+    <ScrollView
+        style="@style/TwoMatchLayout">
+        <LinearLayout
+            android:id="@+id/ll_main_content"
+            style="@style/TwoMatchLayout"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/xsxhl_png"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/rect_gray7">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:orientation="horizontal">
+
+                        <com.whale.beewin.view.RoundImageView
+                            android:id="@+id/found_picture"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:src="@drawable/ic_launcher"
+                            app:ml_border_color="@color/white"
+                            app:ml_shape_type="round"/>
+
+                        <LinearLayout
+                           style="@style/TwoWrapLayout"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_user_name"
+                                style="@style/TwoWrapLayout"
+                                android:layout_gravity="center_vertical"
+                                android:text="张先生"
+                                android:textColor="@color/three_color"
+                                android:textSize="@dimen/text_size24"/>
+
+                            <TextView
+                                style="@style/TwoWrapLayout"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="2dp"
+                                android:text="@string/fenxiangshuoming"
+                                android:textColor="@color/three_color"
+                                android:textSize="10sp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                      style="@style/xian"
+                        android:layout_marginTop="60dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/Iv_Code"
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="75dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="205dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="您的邀请码:"
+                            android:textColor="@color/six_color"
+                            android:textSize="@dimen/text_size26"/>
+
+                        <TextView
+                            android:id="@+id/tv_invite_code"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="未登录"
+                            android:textColor="@color/six_color"
+                            android:textSize="@dimen/text_size26"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_share_now"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rect_orange_selector"
+                android:text="立即分享"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

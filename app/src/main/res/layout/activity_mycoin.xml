@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageButton
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/wdhb"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/TwoMatchLayout"
+        android:layout_below="@+id/head"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+           style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:indeterminateDrawable="@drawable/big_loading"/>
+
+            <TextView
+                style="@style/TwoWrapLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="拼命加载中..."
+                android:textColor="@android:color/black"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_content"
+           style="@style/TwoMatchLayout"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv"
+                    style="@style/TwoWrapLayout"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:text="@string/wdhbm"
+                    android:textColor="@color/three_color"
+                    android:textSize="@dimen/text_size30"/>
+
+
+                <TextView
+                    android:id="@+id/tv_coin_number"
+                    style="@style/TwoWrapLayout"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/tv"
+                    android:textColor="@color/three_color"
+                    android:textSize="@dimen/text_size38"/>
+
+                <Button
+                    android:id="@+id/btn_coin_bug"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_right24"
+                    android:background="@drawable/rect_orange_selector"
+                    android:text="@string/ljgm"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            <View style="@style/xian"/>
+
+            <com.whale.beewin.view.XListView
+                android:id="@+id/listview_coin"
+                style="@style/MacthWrapLayout"
+                android:layout_marginTop="8dp"
+                android:divider="@color/bg"
+                android:dividerHeight="1dp"
+                android:scrollbars="none"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

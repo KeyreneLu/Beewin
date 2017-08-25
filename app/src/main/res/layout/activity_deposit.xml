@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tx"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/touzi_fenshu">
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/TwoWrapLayout"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:layout_marginTop="@dimen/margin_left24"
+            android:text="@string/bczdktx"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size26"/>
+
+        <TextView
+            android:id="@+id/tv_deposit_sum"
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size54"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <View
+        style="@style/xian"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_deposit_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/qsrtxje"
+            android:inputType="numberDecimal"
+            android:textColor="@color/three_color"
+            android:textColorHint="@color/c_color"/>
+
+        <TextView
+            android:id="@+id/tv_deposit_charge"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_right24"
+            android:gravity="center_vertical|right"
+            android:text="@string/mssf"
+            android:textColor="@color/chengse"
+            android:textSize="@dimen/text_size30"/>
+    </LinearLayout>
+
+    <View
+        style="@style/xian"/>
+
+    <View
+        style="@style/xian"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="@dimen/margin_left24"
+        android:layout_below="@+id/tx_xian5"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/MyLeftTextStyle"
+            android:text="@string/zhxx"/>
+
+
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="@dimen/margin_left24"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/MyLeftTextStyle"
+            android:text="@string/dh"/>
+
+        <TextView
+            android:id="@+id/tv_deposit_phone"
+            style="@style/Three30Text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right24"/>
+
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="@dimen/margin_left24"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/MyLeftTextStyle"
+            android:text="@string/xm"/>
+
+        <TextView
+            android:id="@+id/tv_deposit_name"
+            style="@style/Three30Text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right24"/>
+
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="@dimen/margin_left24"
+        android:background="@color/white">
+
+        <TextView
+            style="@style/MyLeftTextStyle"
+            android:text="@string/kh"/>
+
+        <TextView
+            android:id="@+id/tv_deposit_card"
+            style="@style/Three30Text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right24"/>
+
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+       style="@style/MacthWrapLayout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/zhanghuxinxi_ts"/>
+
+        <TextView
+            style="@style/WrapMatchLayout"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="bottom"
+            android:text="@string/tx_tip1"
+            android:textColor="@color/nine_color"
+            android:textSize="@dimen/text_size24"/>
+
+        <TextView
+            android:id="@+id/tv_deposit_date"
+            style="@style/WrapMatchLayout"
+            android:layout_marginBottom="1dp"
+            android:gravity="bottom"
+            android:text="@string/tx_time"
+            android:textColor="@color/touzi_fenshu"
+            android:textSize="@dimen/text_size24"
+            />
+
+        <TextView
+            style="@style/WrapMatchLayout"
+            android:layout_marginBottom="1dp"
+            android:gravity="bottom"
+            android:text="@string/tx_tip2"
+            android:textColor="@color/nine_color"
+            android:textSize="@dimen/text_size24"/>
+    </LinearLayout>
+
+    <LinearLayout
+       style="@style/MacthWrapLayout"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/WrapMatchLayout"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="33dp"
+            android:gravity="bottom"
+            android:text="@string/tx_tip3"
+            android:textColor="@color/nine_color"
+            android:textSize="@dimen/text_size24"/>
+
+        <TextView
+            android:id="@+id/tv_deposit_time"
+           style="@style/WrapMatchLayout"
+            android:layout_marginBottom="1dp"
+            android:gravity="bottom"
+            android:text="@string/tx_num"
+            android:textColor="@color/touzi_fenshu"
+            android:textSize="@dimen/text_size24"/>
+
+    </LinearLayout>
+    <TextView
+        style="@style/TwoWrapLayout"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="33dp"
+        android:gravity="bottom"
+        android:text="@string/tx_tip4"
+        android:textColor="@color/nine_color"
+        android:textSize="@dimen/text_size24"/>
+
+    <Button
+        android:id="@+id/btn_deposit_sure"
+        style="@style/MySureButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="@dimen/margin_left24"
+        android:layout_marginRight="@dimen/margin_right24"
+        android:text="@string/qrtx"/>
+</LinearLayout>

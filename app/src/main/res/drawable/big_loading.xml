@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+     <item   android:drawable="@drawable/lodinga"
+        android:duration="50"/>
+     <item   android:drawable="@drawable/lodingb"
+        android:duration="50"/>
+     <item   android:drawable="@drawable/lodingc"
+        android:duration="50"/>
+     <item   android:drawable="@drawable/lodingd"
+        android:duration="50"/>
+     <item   android:drawable="@drawable/lodinge"
+        android:duration="50"/>
+     <item   android:drawable="@drawable/lodingf"
+        android:duration="50"/>
+     <item   android:drawable="@drawable/lodingg"
+        android:duration="50"/>
+     <item   android:drawable="@drawable/lodingh"
+        android:duration="50"/>
+     <item   android:drawable="@drawable/lodingi"
+        android:duration="50"/>
+     <item   android:drawable="@drawable/lodingj"
+        android:duration="50"/>
+     <item   android:drawable="@drawable/lodingk"
+        android:duration="50"/>
+     <item   android:drawable="@drawable/lodingl"
+        android:duration="50"/>
+    
+</animation-list>

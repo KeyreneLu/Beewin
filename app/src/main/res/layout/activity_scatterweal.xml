@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/fystfl"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@drawable/stjla"/>
+
+            <ImageView
+                android:id="@+id/iv2"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@drawable/stjlb"/>
+
+            <ImageView
+                android:id="@+id/iv3"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@drawable/stjlc"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_scatter_now"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/e_nine"
+        android:gravity="center"
+        android:text="@string/ljst"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size36"/>
+</LinearLayout>

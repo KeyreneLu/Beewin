@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/TwoMatchLayout"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_tou"
+        android:layout_width="match_parent"
+        android:layout_height="21.5dp"
+        android:background="@color/touzi_fenshu">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/wdrm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tv_contacts_statistics"
+            style="@style/WeightMatchLayout"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/rmtj2"
+            android:textSize="@dimen/text_size30"
+            android:textColor="@color/two_blue_color"/>
+
+        <View style="@style/ShuXian"/>
+
+        <TextView
+            android:id="@+id/tv_network_reward"
+            style="@style/WeightMatchLayout"
+            android:gravity="center"
+            android:textColor="@color/six_color"
+            android:textSize="@dimen/text_size30"
+            android:text="@string/rmjl"/>
+
+        <View style="@style/ShuXian"/>
+
+        <TextView
+            android:id="@+id/tv_invite_friends"
+            style="@style/WeightMatchLayout"
+            android:gravity="center"
+            android:textColor="@color/six_color"
+            android:textSize="@dimen/text_size30"
+            android:text="@string/yqhy"/>
+
+    </LinearLayout>
+
+    <View style="@style/xian"/>
+
+    <com.whale.beewin.view.NoScrollViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Species">
+        <item>充值提现</item>
+        <item>投资理财</item>
+        <item>互动奖励</item>
+    </string-array>
+
+    <string-array name="Month">
+        <item>12</item>
+        <item>11</item>
+        <item>10</item>
+        <item>9</item>
+        <item>8</item>
+        <item>7</item>
+        <item>6</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="Bank">
+        <item>农业银行</item>
+        <item>浦发银行</item>
+        <item>交通银行</item>
+        <item>工商银行</item>
+        <item>邮储银行</item>
+        <item>广发银行</item>
+        <item>民生银行</item>
+        <item>平安银行</item>
+        <item>招商银行</item>
+        <item>中国银行</item>
+        <item>建设银行</item>
+        <item>光大银行</item>
+        <item>兴业银行</item>
+        <item>中信银行</item>
+        <item>华夏银行</item>
+    </string-array>
+
+    <string-array name="Cost">
+        <item>单笔0.2万元/单日限额1万元</item>
+        <item>单笔5万元/单日限额5万元</item>
+        <item>单笔5万元/单日限额5万元</item>
+        <item>单笔5万元/单日限额5万元</item>
+        <item>单笔0.5万元/单日限额0.5万元</item>
+        <item>单笔5万元/单日限额5万元</item>
+        <item>单笔5万元/单日限额5万元</item>
+        <item>单笔5万元/单日限额5万元</item>
+        <item>单笔1万元/单日限额1万元</item>
+        <item>单笔5万元/单日限额5万元</item>
+        <item>单笔5万元/单日限额5万元</item>
+        <item>单笔5万元/单日限额5万元</item>
+        <item>单笔5万元/单日限额5万元</item>
+        <item>单笔5万元/单日限额5万元</item>
+        <item>单笔5万元/单日限额5万元</item>
+    </string-array>
+
+    <array name="Period">
+        <item>1分钟</item>
+        <item>5分钟</item>
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>60分钟</item>
+        <item>240分钟</item>
+        <item>月K</item>
+    </array>
+
+</resources>

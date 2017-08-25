@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        style="@style/TwoWrapLayout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"
+            android:indeterminateDrawable="@drawable/big_loading"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="拼命加载中..."
+            android:textColor="@android:color/black"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_content"
+        android:visibility="gone"
+        style="@style/TwoMatchLayout"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="21.5dp"
+            android:background="@color/touzi_fenshu">
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/touzi_fenshu">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TwoWrapLayout"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="@string/tz"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size36"/>
+        </RelativeLayout>
+
+        <com.whale.beewin.view.XListView
+            android:id="@+id/list"
+            style="@style/TwoMatchLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="@color/bg"
+            android:scrollbars="none"
+            android:dividerHeight="10dp"/>
+    </LinearLayout>
+</RelativeLayout>
+

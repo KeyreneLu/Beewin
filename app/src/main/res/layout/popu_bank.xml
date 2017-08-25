@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:text="@string/qx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/six_color"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size30"
+            android:layout_marginLeft="55dp"/>
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:text="@string/qd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/touzi_fenshu"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="55dp"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size30"
+            android:layout_marginLeft="55dp"/>
+    </RelativeLayout>
+    <View
+       style="@style/xian"
+       android:layout_below="@+id/top"
+       android:id="@+id/bank_xian"/>
+
+    <ListView
+        android:layout_below="@+id/bank_xian"
+        android:divider="@color/xian"
+        android:dividerHeight="@dimen/xian"
+        android:id="@+id/lv_bank"
+        android:layout_width="match_parent"
+        android:layout_height="132dp"/>
+</RelativeLayout>

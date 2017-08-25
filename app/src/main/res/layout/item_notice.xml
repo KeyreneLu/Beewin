@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:paddingLeft="@dimen/margin_left24"
+        android:paddingRight="@dimen/margin_right24"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_notice_state"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/gonggao_nokan"
+            android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_left24"
+                android:layout_toRightOf="@+id/iv_notice_state"
+                style="@style/TwoWrapLayout">
+                <TextView
+                    android:id="@+id/tv_notice_name"
+                    style="@style/TwoWrapLayout"
+                    android:text="【活动公告】"
+                    android:textSize="@dimen/text_size30"
+                    android:textColor="@color/three_color"/>
+                
+                <TextView
+                    android:layout_below="@+id/tv_notice_name"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/gg"
+                    android:textSize="@dimen/text_size26"
+                    android:textColor="@color/three_color"
+                    android:paddingLeft="3dp"
+                    style="@style/TwoWrapLayout"/>
+
+                <TextView
+                    android:id="@+id/tv_notice_time"
+                    android:textColor="@color/nine_color"
+                    android:textSize="@dimen/text_size24"
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentRight="true"
+                    android:text="2017-03-28 14:55:20"/>
+            </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

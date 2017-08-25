@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:background="@mipmap/record_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textview_me_fengying"
+                style="@style/TwoWrapLayout"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="蜂赢01号"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textview_me_di"
+                style="@style/TwoWrapLayout"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="第"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textview_number_me"
+                style="@style/TwoWrapLayout"
+                android:layout_gravity="center_vertical"
+                android:text="98"
+                android:textColor="#e23b04"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/textview_qi"
+               style="@style/TwoWrapLayout"
+                android:layout_gravity="center_vertical"
+                android:text="期"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <RelativeLayout
+               style="@style/TwoMatchLayout">
+
+                <ImageView
+                    android:id="@+id/imageview_me_cy"
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/w_cyz"
+                    android:focusable="false"
+                    android:text="持有中"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@mipmap/record_xian"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <LinearLayout
+                   style="@style/weightWrapLayout"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textview_me_bfb"
+                        style="@style/TwoWrapLayout"
+                        android:text="13.00%"
+                        android:textColor="@color/three_a"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                       style="@style/TwoWrapLayout"
+                        android:text="年利率"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/a_five"
+                        android:textSize="11sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/weightWrapLayout"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/TwoWrapLayout"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textview_me_qixiantime"
+                            style="@style/TwoWrapLayout"
+                            android:text="12"
+                            android:textColor="@color/three_a"
+                            android:textSize="14sp"/>
+
+
+                        <TextView
+                            android:id="@+id/textview_me_yue"
+                            style="@style/TwoWrapLayout"
+                            android:text="个月"
+                            android:textColor="@color/three_a"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:text="期限"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/a_five"
+                        android:textSize="11sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/weightWrapLayout"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textview_me_xxhb"
+                        style="@style/TwoWrapLayout"
+                        android:text="一次性还款"
+                        android:textColor="@color/three_a"
+                        android:textSize="14sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:text="还款方式"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/a_five"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 第二行 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    style="@style/weightWrapLayout"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textview_me_jysj"
+                        style="@style/TwoWrapLayout"
+                        android:text="2015-09-07"
+                        android:textColor="@color/three_a"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:text="交易时间"
+                        android:textColor="@color/a_five"
+                        android:layout_marginTop="8dp"
+                        android:textSize="11sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/weightWrapLayout"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textview_me_dqsj"
+                        style="@style/TwoWrapLayout"
+                        android:text="2015-9-28"
+                        android:textColor="@color/three_a"
+                        android:textSize="14sp"/>
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:text="到期日期"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/a_five"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/weightWrapLayout"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 第三行 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/weightWrapLayout"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textview_me_gmje"
+                        style="@style/TwoWrapLayout"
+                        android:text="￥1000.00"
+                        android:textColor="@color/three_a"
+                        android:textSize="14sp"/>
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:text="购买金额"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/a_five"
+                        android:textSize="11sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/weightWrapLayout"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textview_me_yuqisy"
+                        style="@style/TwoWrapLayout"
+                        android:text="￥5.56"
+                        android:textColor="#e23b04"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:text="预期收益"
+                        android:textColor="@color/a_five"
+                        android:layout_marginTop="8dp"
+                        android:textSize="11sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                   style="@style/weightWrapLayout"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

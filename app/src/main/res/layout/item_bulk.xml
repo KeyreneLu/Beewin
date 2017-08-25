@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View style="@style/xian"/>
+    <RelativeLayout
+        android:paddingLeft="@dimen/margin_left24"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_toLeftOf="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tv_bulk_name"
+                    android:textColor="@color/three_color"
+                    android:textSize="@dimen/text_size30"
+                    android:text="蜂赢01号01期"
+                    style="@style/TwoWrapLayout"/>
+
+                <TextView
+                    android:id="@+id/tv_bulk_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="2016.03.22"
+                    android:textSize="@dimen/text_size26"
+                    android:textColor="@color/four_d"
+                    android:layout_below="@+id/tv_bulk_name"/>
+
+                <TextView
+                    android:layout_below="@+id/tv_bulk_name"
+                    style="@style/TwoWrapLayout"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:id="@+id/tv"
+                    android:textColor="@color/three_color"
+                    android:textSize="@dimen/text_size24"
+                    android:text="@string/nll"
+                    style="@style/TwoWrapLayout"/>
+
+                <TextView
+                    android:id="@+id/tv_bulk_precent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/text_size36"
+                    android:textColor="@color/four_d"
+                    android:layout_below="@+id/tv"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv"
+            style="@style/MyImageViewStyle"/>
+    </RelativeLayout>
+    <View style="@style/xian"/>
+</LinearLayout>

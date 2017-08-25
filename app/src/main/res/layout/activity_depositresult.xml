@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="提现结果"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+
+        <TextView
+            android:id="@+id/iv_home_right"
+            style="@style/TwoWrapLayout"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size30"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/wc"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/xian"
+        android:background="@color/xian"/>
+
+    <LinearLayout
+        android:id="@+id/ll_gc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/iv_time1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/duigou"/>
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="32dp"
+                android:layout_below="@+id/iv_time1"
+                android:layout_marginLeft="10dp"
+                android:background="@color/touzi_fenshu"/>
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_toRightOf="@id/iv_time1"
+                android:text="@string/zcsq"
+                android:textColor="@color/touzi_fenshu"
+                android:textSize="@dimen/text_size34"/>
+
+            <TextView
+                android:id="@+id/tx_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_balance"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iv_time1"
+                android:textColor="@color/touzi_fenshu"
+                android:textSize="@dimen/text_size28"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <View
+                android:id="@+id/progress1"
+                android:layout_width="5dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/b_one"/>
+
+            <ImageView
+                android:id="@+id/iv_time2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/progress1"
+                android:src="@mipmap/sy_zc"/>
+
+            <TextView
+                android:id="@+id/tv_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_time2"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="-7dp"
+                android:layout_toRightOf="@id/iv_time2"
+                android:text="@string/yjdzsj"
+                android:textColor="@color/three_color"
+                android:textSize="@dimen/text_size34"/>
+
+            <TextView
+                android:id="@+id/tx_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time2"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iv_time2"
+                android:textColor="@color/six_color"
+                android:textSize="@dimen/text_size28"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_gc"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="@dimen/margin_right30"
+            android:layout_marginTop="@dimen/margin_right30"
+            android:src="@drawable/zhanghuxinxi_ts"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_right30"
+            android:layout_marginRight="@dimen/margin_right30"
+            android:layout_marginTop="@dimen/margin_right24"
+            android:layout_toRightOf="@+id/iv_img"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/txtip"
+            android:textColor="@color/six_color"
+            android:textSize="@dimen/text_size28"/>
+    </RelativeLayout>
+</LinearLayout>

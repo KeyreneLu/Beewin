@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/TwoMatchLayout"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/cz"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="match_parent">
+
+        <LinearLayout
+            style="@style/TwoMatchLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/white45layout"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/TwoWrapLayout"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:text="@string/je"
+                    android:textColor="@color/touzi_fenshu"
+                    android:textSize="@dimen/text_size30"/>
+
+                <EditText
+                    android:id="@+id/et_recharge_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null"
+                    android:cursorVisible="true"
+                    android:hint="@string/tip"
+                    android:textColorHint="@color/c_color"
+                    android:textSize="@dimen/text_size26"/>
+
+            </LinearLayout>
+
+            <View style="@style/xian"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/white45layout"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_left24"
+                android:text="@string/zhxx"
+                android:textColor="@color/three_color"
+                android:textSize="@dimen/text_size30"/>
+
+            <View style="@style/xian"/>
+
+            <RelativeLayout
+                style="@style/white45layout">
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:text="@string/dh"/>
+
+
+                <TextView
+                    android:id="@+id/tv_user_phone"
+                    style="@style/Three30Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_right24"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <RelativeLayout
+                style="@style/white45layout">
+
+                <TextView
+                    style="@style/TwoWrapLayout"
+                    android:layout_marginLeft="11dp"
+                    android:text="@string/xm"
+                    android:textColor="@color/three_color"
+                    android:textSize="@dimen/text_size30"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="11dp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_right24"
+                    android:textColor="@color/three_color"
+                    android:textSize="@dimen/text_size30"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <RelativeLayout
+                style="@style/white45layout">
+
+                <TextView
+                    style="@style/TwoWrapLayout"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:text="@string/kh"
+                    android:textColor="@color/three_color"
+                    android:textSize="@dimen/text_size30"/>
+
+
+                <TextView
+                    android:id="@+id/tv_card_code"
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_right24"
+                    android:textColor="@color/three_color"
+                    android:textSize="@dimen/text_size30"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/TwoWrapLayout"
+                    android:src="@drawable/nologin"/>
+
+                <TextView
+                    style="@style/TwoWrapLayout"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/qianbao_chongzhi_ts"
+                    android:textColor="#999999"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_above="@+id/btn_sure_recharge"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/TwoWrapLayout"
+                android:src="@drawable/bao_lv"/>
+
+            <TextView
+                style="@style/TwoWrapLayout"
+                android:layout_marginLeft="5dp"
+                android:text="@string/qianbao_chongzhi_bz"
+                android:textColor="@color/three_zero"
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_sure_recharge"
+            style="@style/MySureButton"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:layout_marginRight="@dimen/margin_right24"
+            android:text="@string/qrcz"/>
+    </RelativeLayout>
+</LinearLayout>

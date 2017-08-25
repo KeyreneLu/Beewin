@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lamp_text_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文本-1"
+        android:textColor="#333333"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/lamp_text_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="文本-2"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/TwoMatchLayout"
+              android:id="@+id/main_content"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/grzx"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <View
+        style="@style/xian"
+        android:layout_marginTop="8dp"/>
+
+    <ScrollView
+        android:id="@+id/Main_content"
+        style="@style/MacthWrapLayout">
+
+        <LinearLayout
+            style="@style/MacthWrapLayout"
+            android:orientation="vertical">
+            <!-- 账号 -->
+            <RelativeLayout
+                android:id="@+id/rl_user_account"
+                style="@style/white45layout">
+
+                <ImageView
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:src="@drawable/me"/>
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/zh"/>
+
+                <TextView
+                    android:id="@+id/tv_user_phone"
+                    style="@style/Three30Text"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_right24"
+                    android:text="15527283546"/>
+
+                <View
+                    style="@style/xian"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40dp"/>
+            </RelativeLayout>
+
+            <!-- 会员等级-->
+            <RelativeLayout
+                android:id="@+id/rl_user_member"
+                style="@style/white45layout">
+
+
+                <ImageView
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:src="@drawable/huiyuan"/>
+
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/hydj"/>
+
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    style="@style/MyImageViewStyle"/>
+
+
+                <ImageView
+                    android:id="@+id/iv_member_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv3"
+                    android:background="@null"
+                    android:src="@drawable/vip_a"/>
+
+                <View
+                    style="@style/xian"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40dp"/>
+            </RelativeLayout>
+
+            <!-- 我的二维码 -->
+            <RelativeLayout
+                android:id="@+id/rl_user_code"
+                style="@style/white45layout">
+
+                <ImageView
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:src="@drawable/erweima"/>
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/wdewm"/>
+
+                <ImageView
+                    style="@style/MyImageViewStyle"/>
+
+                <View
+                    style="@style/xian"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40dp"/>
+            </RelativeLayout>
+
+            <!-- 实名认证 -->
+            <RelativeLayout
+                android:id="@+id/rl_realm_name"
+                style="@style/white45layout">
+
+
+                <ImageView
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:src="@drawable/shiming"/>
+
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/smrz"/>
+
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    style="@style/MyImageViewStyle"/>
+
+
+                <TextView
+                    android:id="@+id/tv_realm_status"
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv2"
+                    android:text="未认证"
+                    android:textSize="14sp"/>
+
+                <View
+                    style="@style/xian"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40dp"/>
+            </RelativeLayout>
+
+            <!-- 账户信息 -->
+            <RelativeLayout
+                android:id="@+id/rl_user_info"
+                style="@style/white45layout">
+
+
+                <ImageView
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:src="@drawable/zhanghu"/>
+
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/zhxx"/>
+
+                <ImageView
+                    style="@style/MyImageViewStyle"/>
+
+                <View
+                    style="@style/xian"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40dp"/>
+
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="8dp"/>
+            <!-- 修改密码 -->
+            <RelativeLayout
+                android:id="@+id/rl_modify_password"
+                style="@style/white45layout">
+
+
+                <ImageView
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:src="@drawable/xiugai"/>
+
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/xgmm"/>
+
+                <ImageView
+                    style="@style/MyImageViewStyle"/>
+
+                <View
+                    style="@style/xian"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40dp"/>
+            </RelativeLayout>
+            <!--手势密码 -->
+            <RelativeLayout
+                style="@style/white45layout">
+
+
+                <ImageView
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:src="@drawable/shoushi"/>
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/ssmm"/>
+
+                <ImageView
+                    android:id="@+id/iv_sign_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="7dp"
+                    android:padding="5dp"
+                    android:src="@drawable/guan"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="8dp"/>
+
+            <!--关于蜂赢金融 -->
+            <RelativeLayout
+                android:id="@+id/rl_about_us"
+                style="@style/white45layout">
+
+                <ImageView
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:src="@drawable/guanyu"/>
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/gywm"
+                    android:textColor="@color/three_color"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    style="@style/MyImageViewStyle"/>
+
+
+                <TextView
+                    android:id="@+id/tv_app_version"
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv1"/>
+
+                <View
+                    style="@style/xian"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40dp"/>
+            </RelativeLayout>
+
+            <!--常见问题-->
+
+            <RelativeLayout
+                android:id="@+id/rl_Daily_problem"
+                style="@style/white45layout">
+
+                <ImageView
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:src="@drawable/wenti"/>
+
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/cjwt"/>
+
+
+                <ImageView
+                    style="@style/MyImageViewStyle"/>
+
+                <View
+                    style="@style/xian"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40dp"/>
+            </RelativeLayout>
+            <!--客服电话-->
+            <RelativeLayout
+                android:id="@+id/rl_service_phone"
+                style="@style/white45layout">
+
+                <ImageView
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:src="@drawable/kefu"/>
+
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/kfdh"/>
+
+                <ImageView
+                    android:id="@+id/iv"
+                    style="@style/MyImageViewStyle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/iv"
+                    android:text="400-027-5671"
+                    android:textColor="@color/three_color"
+                    android:textSize="15sp"/>
+
+                <View
+                    style="@style/xian"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="40dp"/>
+            </RelativeLayout>
+            <!--意见反馈-->
+            <RelativeLayout
+                android:id="@+id/rl_feed_back"
+                style="@style/white45layout">
+
+                <ImageView
+                    style="@style/TwoWrapLayout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_left24"
+                    android:src="@drawable/yijianfankui"/>
+
+                <TextView
+                    style="@style/Three30Text"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="40dp"
+                    android:text="@string/yjfk"/>
+
+                <ImageView
+                    style="@style/MyImageViewStyle"/>
+
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_app_exit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/tcdl"
+                android:textColor="@color/three_color"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@color/bg"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

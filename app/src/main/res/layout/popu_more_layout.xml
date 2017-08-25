@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:background="@color/white"
+       style="@style/TwoWrapLayout"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <ImageView
+            style="@style/TwoWrapLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/mayi"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:text="解锁失败"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/text_size40"
+            android:textColor="@color/chengse"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            style="@style/TwoWrapLayout"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                style="@style/TwoWrapLayout"
+                android:textColor="@color/three_color"
+                android:textSize="@dimen/text_size26"
+                android:text="您的一度人脉实名认证人数未达到"/>
+            <TextView
+                android:id="@+id/tv_real_number"
+                style="@style/TwoWrapLayout"
+                android:textSize="@dimen/text_size26"
+                android:textColor="@color/touzi_fenshu"
+                android:text="10"/>
+            <TextView
+                style="@style/TwoWrapLayout"
+                android:textColor="@color/three_color"
+                android:textSize="@dimen/text_size26"
+                android:text="人!"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            style="@style/TwoWrapLayout"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                style="@style/TwoWrapLayout"
+                android:textColor="@color/three_color"
+                android:textSize="@dimen/text_size26"
+                android:text="您的一度人脉投资人数未达到"/>
+            <TextView
+                android:id="@+id/tv_invest_number"
+                style="@style/TwoWrapLayout"
+                android:textSize="@dimen/text_size26"
+                android:textColor="@color/touzi_fenshu"
+                android:text="10"/>
+            <TextView
+                style="@style/TwoWrapLayout"
+                android:textColor="@color/three_color"
+                android:textSize="@dimen/text_size26"
+                android:text="人!"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

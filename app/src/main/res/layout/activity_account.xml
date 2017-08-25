@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              style="@style/TwoMatchLayout"
+              android:background="@color/bg"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/zhxx"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <View
+        style="@style/xian"
+        android:layout_marginTop="8dp"/>
+    <!-- 电话 -->
+    <RelativeLayout
+        style="@style/white45layout">
+
+        <ImageView
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:src="@drawable/zhanghu_number"/>
+
+        <TextView
+            style="@style/Three30Text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:text="电话"/>
+
+        <TextView
+            android:id="@+id/tv_user_phone"
+            style="@style/Three30Text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right24"/>
+
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"/>
+
+    </RelativeLayout>
+    <!-- 姓名 -->
+    <RelativeLayout
+        style="@style/white45layout">
+
+        <ImageView
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:src="@drawable/me"/>
+
+
+        <TextView
+            style="@style/Three30Text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:text="@string/xm"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            style="@style/Three30Text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right24"/>
+
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"/>
+
+    </RelativeLayout>
+
+    <!-- 卡号-->
+    <!-- 姓名 -->
+    <RelativeLayout
+        style="@style/white45layout">
+
+        <ImageView
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left24"
+            android:src="@drawable/me"/>
+
+
+        <TextView
+            style="@style/Three30Text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:text="@string/kh"/>
+
+        <TextView
+            android:id="@+id/tv_bank_card"
+            style="@style/Three30Text"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_right24"/>
+
+        <View
+            style="@style/xian"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"/>
+
+    </RelativeLayout>
+
+    <View style="@style/xian"/>
+
+    <LinearLayout
+        style="@style/MacthWrapLayout"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            style="@style/TwoWrapLayout"
+            android:src="@drawable/zhanghuxinxi_ts"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_marginLeft="7dp"
+            android:text="@string/zfxx_ts"
+            android:textColor="@color/six_color"
+            android:textSize="@dimen/text_size24"/>
+    </LinearLayout>
+
+</LinearLayout>

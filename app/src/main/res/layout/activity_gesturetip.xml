@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:layout_weight="1.0"
+    android:background="@color/gesture_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical"
+    android:scrollbars="none"
+    android:visibility="visible">
+
+    <LinearLayout
+        style="@style/MacthWrapLayout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="21.5dp"
+            android:background="@color/gesture_background">
+        </RelativeLayout>
+
+        <TextView
+            style="@style/MacthWrapLayout"
+            android:layout_marginLeft="30.0dip"
+            android:layout_marginRight="30.0dip"
+            android:layout_marginTop="15.0dip"
+            android:gravity="center_horizontal"
+            android:shadowColor="#b3000000"
+            android:shadowRadius="1.0"
+            android:text="@string/gesture_password_guide_text"
+            android:textColor="@android:color/white"
+            android:textSize="16.0sp"/>
+
+        <ImageView
+            style="@style/TwoWrapLayout"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25.0dip"
+            android:src="@drawable/gesture_guide_pic"/>
+
+        <Button
+            android:id="@+id/btn_guide"
+            style="@style/GreenButtonLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/gesture_password_guide_creat_btn"/>
+    </LinearLayout>
+</ScrollView>

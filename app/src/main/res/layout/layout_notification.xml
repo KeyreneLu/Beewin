@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+android:background="@android:color/darker_gray">
+    
+    <!-- 图标 -->
+    <ImageView 
+        android:id="@+id/noti_imageview"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/dl_logo"
+        android:layout_marginRight="10dp"/>
+
+    <!-- 显示下载中文字 -->
+    <TextView
+        android:id="@+id/noti_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/noti_imageview"
+        android:layout_marginRight="10dp"
+        android:text="下载中..."/>
+    
+    <!-- 显示进度百分比 -->
+    <TextView
+        android:id="@+id/noti_progress_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/noti_textview"
+        android:layout_alignBottom="@id/noti_textview"/>
+
+    <!-- 进度条 -->
+    <ProgressBar
+        android:id="@+id/noti_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noti_textview"
+        android:layout_alignLeft="@id/noti_textview" />
+
+</RelativeLayout>

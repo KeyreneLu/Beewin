@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/black3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/qblx"
+        android:gravity="center"
+        android:textColor="@color/touzi_fenshu"/>
+    <ListView
+        android:background="@color/white"
+        android:id="@+id/lv_species"
+        android:divider="@color/xian"
+        android:dividerHeight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"/>
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/TwoMatchLayout"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/touzi_fenshu">
+
+        <ImageView
+            android:id="@+id/iv_home_left"
+            style="@style/TwoWrapLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:padding="10dp"
+            android:src="@drawable/back_left_big"/>
+
+        <TextView
+            style="@style/TwoWrapLayout"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="@string/xyd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size36"/>
+    </RelativeLayout>
+
+    <ScrollView
+        style="@style/MacthWrapLayout"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            style="@style/MacthWrapLayout"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:background="@color/touzi_fenshu">
+
+                <com.whale.beewin.activity.loan.view.SesameCreditPanel
+                    android:id="@+id/seSameCreditPanel"
+                    style="@style/TwoWrapLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"/>
+
+                <LinearLayout
+                    style="@style/MacthWrapLayout"
+                    android:layout_marginTop="130dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_lend_money"
+                        style="@style/TwoWrapLayout"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        style="@style/TwoWrapLayout"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/kjed"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_honor_now"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/rect_blue3"
+                    android:gravity="center"
+                    android:text="@string/djte"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <View
+                style="@style/xian"
+                android:layout_marginTop="8dp"/>
+
+            <RelativeLayout
+                android:paddingLeft="@dimen/margin_left24"
+                style="@style/white45layout">
+                <TextView
+                    android:textColor="@color/three_color"
+                    style="@style/MyLeftTextStyle"
+                    android:text="@string/yjje"/>
+
+                <TextView
+                    android:id="@+id/tv_had_money"
+                    style="@style/Three30Text"
+                    android:text="— —"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_right24"/>
+            </RelativeLayout>
+            <View style="@style/xian"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_loan_rate"
+                android:paddingLeft="@dimen/margin_left24"
+                style="@style/white45layout">
+                <TextView
+                    android:textColor="@color/three_color"
+                    style="@style/MyLeftTextStyle"
+                    android:text="@string/jkjd"/>
+
+                <ImageView
+                    android:id="@+id/iv"
+                    style="@style/MyImageViewStyle"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_loan_record"
+                android:paddingLeft="@dimen/margin_left24"
+                style="@style/white45layout">
+                <TextView
+                    android:textColor="@color/three_color"
+                    style="@style/MyLeftTextStyle"
+                    android:text="@string/jkjl"/>
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    style="@style/MyImageViewStyle"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_loan_number"
+                android:paddingLeft="@dimen/margin_left24"
+                style="@style/white45layout">
+                <TextView
+                    android:textColor="@color/three_color"
+                    style="@style/MyLeftTextStyle"
+                    android:text="@string/jkxs"/>
+                <TextView
+                    android:id="@+id/tv_loan_number"
+                    style="@style/Three30Text"
+                    android:text="— —"
+                    android:layout_toLeftOf="@+id/iv3"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerVertical="true"/>
+                <ImageView
+                    android:id="@+id/iv3"
+                    style="@style/MyImageViewStyle"/>
+            </RelativeLayout>
+
+            <View style="@style/xian"/>
+
+            <View style="@style/xian"
+                  android:layout_marginTop="8dp"/>
+            <RelativeLayout
+                android:id="@+id/rl_know_loan"
+                android:paddingLeft="@dimen/margin_left24"
+                style="@style/white45layout">
+                <TextView
+                    android:textColor="@color/three_color"
+                    style="@style/MyLeftTextStyle"
+                    android:text="@string/ljfyjk"/>
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    style="@style/MyImageViewStyle"/>
+            </RelativeLayout>
+            <View style="@style/xian"/>
+            <Button
+                android:text="@string/wyjk"
+                android:id="@+id/btn_loan_now"
+                style="@style/myOrangeButton"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
